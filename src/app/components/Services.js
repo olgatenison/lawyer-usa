@@ -12,7 +12,7 @@ export default function Services() {
                 <div className="w-full p-10">
                   <p
                     id="services-title"
-                    className="text-2xl/8 text-pretty font-semibold text-white/90"
+                    className="text-xl/8 text-pretty font-semibold text-white/90"
                   >
                     Так же я представляю интересы клиентов по разным вопросам в
                     США и консультирую по ведению бизнеса в стране.

@@ -80,78 +80,33 @@ export default function Bento() {
                   «Коммерсант», «Insider», «Каспаров.ру», Александр Плющев,
                   Станислав Кучер, Дмитрий Колезев и другие.
                 </p>
-              </div>
-            </div>
-          </div>
-
-          {/* 2 (Large Screens) */}
-          <div className="lg:flex p-px hidden lg:col-span-2 group">
-            <a
-              href="https://www.youtube.com/watch?v=-Qyx5ugwp7o"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="overflow-hidden rounded-lg ring-1 ring-[#2064bc]/20 relative group-hover:ring-[#aa0f24] group-hover:border-[#aa0f24] block"
-              aria-label="Смотреть выпуск программы «Трифекты» на YouTube"
-            >
-              <Image
-                alt="Иконка YouTube с кнопкой воспроизведения, символизирующая запуск видео передачи «Трифекты»"
-                src="/img/youtube.webp"
-                className="h-full w-full object-cover"
-                width={1030}
-                height={1480}
-              />
-              <div className="absolute bottom-0 lg:bottom-10 left-0 right-0 flex items-center justify-center p-10">
-                <p className="text-base font-thin text-white lg:text-justify">
+                <p className="mt-8 text-base font-thin text-white lg:text-justify">
                   В программе{" "}
-                  <span className="group-hover:text-[#aa0f24] relative inline-flex items-center font-semibold hover:text-[#aa0f24] transition-colors">
+                  <a
+                    href="https://www.youtube.com/watch?v=-Qyx5ugwp7o"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative inline-flex items-center font-semibold hover:text-[#aa0f24] transition-colors"
+                  >
                     «Трифекты»
-                    <span className="absolute -top-5 right-3 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 30 20"
-                        className="w-10 h-8 drop-shadow"
-                        aria-hidden="true"
-                      >
-                        <rect width="30" height="20" rx="5" fill="#aa0f24" />
-                        <path d="M12 7L18 10L12 13V7Z" fill="white" />
-                      </svg>
-                    </span>
-                  </span>
+                  </a>
                   , которая с конца 2023 года еженедельно выходит на канале
                   «Живой Гвоздь» и рассказывает про новости США, я являюсь
                   соведущим.
                 </p>
               </div>
-            </a>
+            </div>
           </div>
 
-          {/* 2 Small Screens */}
-          <div className="flex lg:hidden p-px flex-col sm:flex-row">
-            <a
-              href="https://www.youtube.com/watch?v=-Qyx5ugwp7o"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="overflow-hidden rounded-lg ring-1 ring-[#2064bc]/20 relative h-fit bg-[#060b14] block group sm:hover:ring-[#aa0f24] sm:hover:border-[#aa0f24] transition-all"
-              aria-label="Смотреть выпуск программы «Трифекты» на YouTube"
-            >
-              <div className="flex items-center justify-center p-10 text-base md:text-2xl gap-10 flex-col sm:flex-row wrap">
-                <Image
-                  alt="Иконка YouTube для передачи «Трифекты» с кнопкой воспроизведения"
-                  src="/img/small.webp"
-                  className="h-full sm:w-1/2 object-cover sm:mb-0 mb-5"
-                  width={640}
-                  height={360}
-                />
-                <p className="font-thin text-white min-w-[240px]">
-                  В программе
-                  <span className="group-hover:text-[#aa0f24] relative inline-flex items-center font-semibold hover:text-[#aa0f24] transition-colors">
-                    «Трифекты»,
-                  </span>
-                  которая с конца 2023 года еженедельно выходит на канале «Живой
-                  Гвоздь» и рассказывает про новости США, я являюсь соведущим.
-                </p>
-              </div>
-            </a>
+          {/* 2 (Large Screens) */}
+          <div className="rounded-lg ring-1 ring-[#2064bc]/20 overflow-hidden lg:col-span-2">
+            <Image
+              alt="Иконка YouTube с кнопкой воспроизведения, символизирующая запуск видео передачи «Трифекты»"
+              src="/img/youtube.webp"
+              className="h-full w-full object-cover"
+              width={1030}
+              height={1480}
+            />
           </div>
 
           {/* 3 Large Screens*/}
@@ -175,18 +130,36 @@ export default function Bento() {
                   Услуги
                 </div>
 
-                <p className="mt-5 text-base/6 sm:text-justify font-thin text-white/80">
-                  Американский юридический рынок очень сегментирован: как
-                  правило, адвокаты и юридические компании имеют узкую
-                  специализацию. Например, есть юридические компании, которые
-                  занимаются не просто трудовым правом в целом, а только
-                  дискриминацией в трудовых отношениях, причем имеют
-                  специализацию внутри дискриминации и работают только с истцами
-                  или ответчиками. Или, например адвокаты специализируются не
-                  просто на уголовных делах, но на отдельных категориях
-                  уголовных дел типа преступлений «белых воротничков» и не
-                  работают с другими категориями дел.
-                </p>
+                <div className="w-full ">
+                  <p className="mt-5 text-base/6 sm:text-justify font-thin text-white/80">
+                    Американский юридический рынок очень сегментирован: как
+                    правило, адвокаты и юридические компании имеют узкую
+                    специализацию. Например, есть юридические компании, которые
+                    занимаются не просто трудовым правом в целом, а только
+                    дискриминацией в трудовых отношениях, причем имеют
+                    специализацию внутри дискриминации и работают только с
+                    истцами или ответчиками. Или, например адвокаты
+                    специализируются не просто на уголовных делах, но на
+                    отдельных категориях уголовных дел типа преступлений «белых
+                    воротничков» и не работают с другими категориями дел.
+                  </p>
+
+                  <figure className="border-l-4 border-[#aa0f24] pl-8 mt-10">
+                    <blockquote className="text-xl/8 font-semibold tracking-tight text-white/80 max-w-xl">
+                      Только самые простые дела ведут адвокаты, которые не имеют
+                      четкой специализации.
+                    </blockquote>
+                  </figure>
+
+                  <p className="mt-10 text-base/6 font-thin text-white/80">
+                    Я помогаю искать правильного адвоката и при необходимости
+                    сопровождаю проект как менеджер: моя практика показывает,
+                    что американский адвокат и русскоязычный клиент не только в
+                    прямом смысле слова говорят на разных языках, но у них и
+                    разные ожидания друг от друга. Я же помогаю эти ожидания
+                    свести к общему знаменателю.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
