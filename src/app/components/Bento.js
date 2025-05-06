@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Bento() {
   return (
-    <div className="relative pt-20 pb-4 " id="about">
+    <div className="relative py-10 lg:py-20" id="about">
       <div className="mx-auto px-6 lg:max-w-7xl lg:px-8 ">
         {/* background SVG */}
         <svg
@@ -99,27 +99,39 @@ export default function Bento() {
           </div>
 
           {/* 2 (Large Screens) */}
-          <div className="rounded-lg ring-1 ring-[#2064bc]/20 overflow-hidden lg:col-span-2">
+          <div className="rounded-lg ring-1 ring-[#2064bc]/20 overflow-hidden lg:col-span-2 h-full lg:flex p-px hidden ">
             <Image
-              alt="Иконка YouTube с кнопкой воспроизведения, символизирующая запуск видео передачи «Трифекты»"
-              src="/img/youtube.webp"
-              className="h-full w-full object-cover"
-              width={1030}
-              height={1480}
+              alt="Статуя Фемиды, символизирующая справедливость, с завязанными глазами и весами в руках, вертикальная версия изображения"
+              src="/img/bd-02.webp"
+              className="object-cover w-full h-full"
+              width={1024}
+              height={1536}
             />
           </div>
 
           {/* 3 Large Screens*/}
-          <div className="lg:flex p-px hidden lg:col-span-2 ">
-            <div className="overflow-hidden rounded-lg bg-[#0a1727] ring-1 ring-[#2064bc]/20 ">
-              <Image
-                alt="Статуя Фемиды, символизирующая справедливость, с завязанными глазами и весами в руках, вертикальная версия изображения"
-                src="/img/bd-02.webp"
-                className="object-cover w-full h-full"
-                width={1024}
-                height={1536}
-              />
+          <div className="lg:flex p-px lg:col-span-2 h-full ">
+            <div className="flex flex-col  gap-4">
+              <div className="overflow-hidden rounded-lg bg-[#020508] ring-1 ring-[#2064bc]/20 h-1/2">
+                <Image
+                  alt="Рукопожатие — символ юридического партнёрства в США"
+                  src="/img/hands.webp"
+                  className="object-cover w-full h-full"
+                  width={1536}
+                  height={1024}
+                />
+              </div>
+              <div className="overflow-hidden rounded-lg bg-[#0a1727]  ring-1 ring-[#2064bc]/20 h-full">
+                <p
+                  id="services-title"
+                  className=" text-xl/8 text-pretty font-semibold text-white/90 p-10 "
+                >
+                  Так же я представляю интересы клиентов по разным вопросам в
+                  США и консультирую по ведению бизнеса в стране.
+                </p>
+              </div>
             </div>
+            <div></div>
           </div>
 
           {/* 4 */}
@@ -161,19 +173,6 @@ export default function Bento() {
                   </p>
                 </div>
               </div>
-            </div>
-          </div>
-
-          {/* 3 Small Screens */}
-          <div className="flex lg:hidden p-px">
-            <div className="overflow-hidden rounded-lg bg-[#0a1727] ring-1 ring-[#2064bc]/20 ">
-              <Image
-                alt="Статуя Фемиды, олицетворяющая справедливость, с завязанными глазами, держащая весы и меч, символ правосудия"
-                src="/img/bd-03.webp"
-                className="object-cover w-full h-auto"
-                width={1536}
-                height={1024}
-              />
             </div>
           </div>
         </div>

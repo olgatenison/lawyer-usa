@@ -23,7 +23,7 @@ export default function Contacts() {
   return (
     <section className="relative isolate bg-[#040e17]" id="contacts">
       <div className="mx-auto  max-w-7xl pt-16">
-        <div className="relative px-6  lg:static lg:px-8">
+        <div className="relative px-6 lg:static lg:px-8">
           <div>
             {/* background SVG */}
             <svg
@@ -56,22 +56,8 @@ export default function Contacts() {
               />
             </svg>
 
-            {/* blur blob */}
-            <div
-              className="absolute inset-x-0 top-10 -z-10 flex justify-center overflow-hidden blur-3xl"
-              aria-hidden="true"
-            >
-              <div
-                className="aspect-[1108/632] w-[69.25rem] bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-20"
-                style={{
-                  clipPath:
-                    "polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)",
-                }}
-              />
-            </div>
-
             {/* Контент */}
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center pt-10 lg:pt-0">
               <div className="flex justify-center items-center gap-4 mb-5 flex-wrap">
                 {socialLinks.map(({ href, src, alt }, i) => (
                   <a
@@ -87,15 +73,13 @@ export default function Contacts() {
                 ))}
               </div>
 
-              <h2 className=" mb-10 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
+              <h2 className="mb-5 text-pretty text-4xl font-semibold tracking-tight text-[#c41034] sm:text-5xl">
                 Свяжитесь со мной
               </h2>
-              <p className="text-xl/7 text-pretty font-semibold text-white/90">
+              <p className="text-pretty font-thin text-white/80 text-lg/6  max-w-lg mx-auto">
                 Открыт к деловым запросам, консультациям и информационному
-                партнёрству.
-                <span className="block">
-                  Напишите мне — и я постараюсь ответить в ближайшее время.
-                </span>
+                партнёрству. Напишите мне — и я постараюсь ответить в ближайшее
+                время.
               </p>
               <div className="mb-0 lg:mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf] group focus:outline-1 focus:rounded-2xl transition-all">
                 <a href="mailto:igor.slabykh@gmail.com" className="group block">
@@ -103,7 +87,7 @@ export default function Contacts() {
                     <span className="uppercase font-semibold text-[#5395ff] inline-block">
                       Написать на почту
                     </span>
-                    <p className="max-w-lg mx-auto mb-7 text-lg text-white/80 font-light">
+                    <p className="text-pretty font-thin text-white/80 text-lg/6  max-w-lg mx-auto">
                       Свяжитесь со мной для консультаций и партнёрства
                     </p>
 

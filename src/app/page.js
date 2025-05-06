@@ -13,7 +13,6 @@ export default function Home() {
       <main>
         <Hero />
         <Bento />
-        <Services />
         <Contacts />
       </main>
       <footer className="bg-[#040e17] mx-auto py-10">
