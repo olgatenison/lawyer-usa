@@ -21,7 +21,7 @@ const socialLinks = [
 export default function Hero() {
   return (
     <div
-      className="relative isolate overflow-hidden  max-w-7xl pb-10 h-auto mx-auto  bg-left-bottom lg:bg-bottom bg-cover"
+      className="relative isolate overflow-hidden  max-w-7xl pb-10 h-auto mx-auto  bg-left-bottom lg:bg-center bg-cover"
       style={{
         backgroundImage: "url('/4.png')",
         // backgroundSize: "contain",
@@ -31,11 +31,11 @@ export default function Hero() {
     >
       <div className="pt-20 lg:pt-7 mx-auto max-w-7xl px-6 lg:px-8 flex flex-col justify-between gap-20">
         {/* Block with name and text */}
-        <div className="mx-0 mt-30 md:mt-[300px]">
+        <div className="mx-0 mt-40">
           <h2 className="text-5xl font-semibold tracking-tight text-white sm:text-8xl">
             Игорь <span className=" block">Слабых</span>
           </h2>
-          <p className="py-8 text-pretty font-thin text-white/80 text-lg lg:text-xl/8  max-w-80 mb-[80px] lg:mb-[120px]">
+          <p className="py-8 text-pretty font-thin text-white/80 text-lg lg:text-xl/8  max-w-80 mb-[30px] ">
             Юрист, автор телеграм-канала USLegalNews, эксперт в правовой и
             политической системе США
           </p>
@@ -44,7 +44,7 @@ export default function Hero() {
         {/* Button and social links */}
         <div className="mx-auto max-w-7xl flex-col flex gap-10 sm:flex-row sm:justify-between justify-start sm:items-center items-start w-full wrap">
           {/* Social Links */}
-          <div className="flex justify-start sm:justify-center items-center gap-6 mb-10 lg:mb-5 flex-wrap ">
+          <div className="flex justify-start sm:justify-center items-center gap-6 mb-10  flex-wrap ">
             {socialLinks.map(({ href, src, alt }, i) => (
               <a
                 key={i}
