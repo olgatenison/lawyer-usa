@@ -80,42 +80,41 @@ export default function Bento() {
                   «Коммерсант», «Insider», «Каспаров.ру», Александр Плющев,
                   Станислав Кучер, Дмитрий Колезев и другие.
                 </p>
-                <p className="mt-8 text-base font-thin text-white lg:text-justify">
-                  В программе{" "}
-                  <a
-                    href="https://www.youtube.com/watch?v=-Qyx5ugwp7o"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group relative inline-flex items-center font-semibold hover:text-[#aa0f24] transition-colors"
-                  >
-                    «Трифекты»
-                  </a>
-                  , которая с конца 2023 года еженедельно выходит на канале
-                  «Живой Гвоздь» и рассказывает про новости США, я являюсь
-                  соведущим.
-                </p>
               </div>
             </div>
           </div>
 
           {/* 2 (Large Screens) */}
-          <div className="rounded-lg ring-1 ring-[#2064bc]/20 overflow-hidden lg:col-span-2 h-full lg:flex p-px hidden ">
-            <Image
+          <div className="rounded-lg ring-1 ring-[#2064bc]/20 overflow-hidden lg:col-span-2 h-full lg:flex  bg-[#0a1727] text-xl/8 p-10">
+            <p className="lg:mt-24  text-white ">
+              Вместе с коллегами веду программу{" "}
+              <a
+                href="https://www.youtube.com/watch?v=-Qyx5ugwp7o"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative inline-flex items-center font-semibold hover:text-[#aa0f24] transition-colors"
+              >
+                «Трифекты»
+              </a>
+              , которая с конца 2023 года каждую неделю рассказывает про новости
+              США на канале «Живой Гвоздь».
+            </p>
+            {/* <Image
               alt="Статуя Фемиды, символизирующая справедливость, с завязанными глазами и весами в руках, вертикальная версия изображения"
               src="/img/bd-02.webp"
               className="object-cover w-full h-full"
               width={1024}
               height={1536}
-            />
+            /> */}
           </div>
 
           {/* 3 Large Screens*/}
           <div className="lg:flex p-px lg:col-span-2 h-full ">
             <div className="flex flex-col  gap-4">
-              <div className="overflow-hidden rounded-lg bg-[#020508] ring-1 ring-[#2064bc]/20 h-1/2">
+              <div className="overflow-hidden rounded-lg bg-[#020508] ring-1 ring-[#2064bc]/20 h-3/4">
                 <Image
-                  alt="Рукопожатие — символ юридического партнёрства в США"
-                  src="/img/hands.webp"
+                  alt=""
+                  src="/_MG_0512.jpeg"
                   className="object-cover w-full h-full"
                   width={1536}
                   height={1024}

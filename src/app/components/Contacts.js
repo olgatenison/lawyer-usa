@@ -73,13 +73,14 @@ export default function Contacts() {
                 ))}
               </div>
 
-              <h2 className="mb-5 text-pretty text-4xl font-semibold tracking-tight text-[#c41034] sm:text-5xl">
+              <h2 className="mb-5 text-pretty text-4xl font-semibold tracking-tight text-white sm:text-5xl">
                 Свяжитесь со мной
               </h2>
               <p className="text-pretty font-thin text-white/80 text-lg/6  max-w-lg mx-auto">
-                Открыт к деловым запросам, консультациям и информационному
-                партнёрству. Напишите мне — и я постараюсь ответить в ближайшее
-                время.
+                Открыт к деловым запросам и консультациям.{" "}
+                <span className="block">
+                  Напишите мне — и я постараюсь ответить в ближайшее время.
+                </span>
               </p>
               <div className="mb-0 lg:mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf] group focus:outline-1 focus:rounded-2xl transition-all">
                 <a href="mailto:igor.slabykh@gmail.com" className="group block">
