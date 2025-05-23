@@ -11,10 +11,10 @@ export default function Header() {
   return (
     <header className="absolute top-0 left-0 w-full z-10">
       <nav
-        className="mx-auto max-w-7xl px-6 lg:px-8 flex justify-between items-center pt-7"
+        className="mx-auto max-w-7xl px-6 lg:px-8 pt-7"
         aria-label="Главная навигация"
       >
-        <ul className="flex sm:gap-6 flex-wrap gap-4">
+        <ul className="flex sm:gap-6 flex-wrap gap-4 items-center justify-center sm:justify-start sm:items-start mx-auto ">
           {pages.map(({ href, label }, index) => (
             <li key={index}>
               <a

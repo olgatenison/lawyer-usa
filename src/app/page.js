@@ -13,7 +13,7 @@ export default function Home() {
         <Bento />
         <Contacts />
       </main>
-      <footer className="bg-[#040e17] mx-auto py-10">
+      <footer className="bg-[#030a14] mx-auto py-10">
         <p className="text-center text-sm/6 text-gray-400">
           &copy; 2025 Igor Slabykh, All rights reserved.
         </p>
