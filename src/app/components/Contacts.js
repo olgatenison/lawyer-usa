@@ -83,7 +83,10 @@ export default function Contacts() {
                 </span>
               </p>
               <div className="mb-0 lg:mb-10 p-6 text-xl/7 text-pretty font-light text-[#3470bf] group focus:outline-1 focus:rounded-2xl transition-all">
-                <a href="mailto:igor.slabykh@gmail.com" className="group block">
+                <a
+                  href="mailto:igors@firstpriorrity.consulting"
+                  className="group block"
+                >
                   <div className="p-3">
                     <span className="uppercase font-semibold text-[#5395ff] inline-block">
                       Написать на почту
@@ -93,7 +96,7 @@ export default function Contacts() {
                     </p>
 
                     <div className="text-white/90 mt-7 font-semibold group-hover:text-[#aa0f24] group-focus:text-[#aa0f24] transition-colors duration-300">
-                      igor.slabykh@gmail.com
+                      igors@firstpriorrity.consulting
                     </div>
                   </div>
                 </a>

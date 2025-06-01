@@ -58,17 +58,32 @@ export default function Bento() {
                 <div className="mb-12 rounded-full px-14 py-2 w-fit font-semibold text-sm text-[#5395ff] bg-[#2064bc]/10 ring-1 ring-inset ring-[#2064bc]/20 backdrop-blur-md shadow-[inset_-0.75px_-0.5px_rgba(255,255,255,0.1),inset_0.75px_0.5px_rgba(255,255,255,0.025),3px_2px_10px_rgba(0,0,0,0.25),inset_0px_0px_10px_5px_rgba(255,255,255,0.025),inset_0px_0px_40px_5px_rgba(255,255,255,0.025)] ">
                   Обо мне
                 </div>
-                <p className=" text-2xl/8 text-pretty font-semibold text-white/90 max-w-4xl">
-                  Хотя я не практикую право с США, по опыту работы в России и
-                  образованию я юрист, в том числе, со степенью магистра права
-                  от одного из ведущих американских частных ВУЗов: Университета
-                  Джорджа Вашингтона.
-                </p>
-                <p className="mt-8 text-base/6 lg:text-justify font-thin text-white/80 max-w-4xl">
-                  Я написал большое количество научных и общеполитических статей
-                  на русском и английском языках, которые опубликованы в США и в
-                  России.
-                </p>
+                <div className="flex gap-8 justify-between lg:flex-row flex-col">
+                  <div className="">
+                    <p className=" text-2xl/8 text-pretty font-semibold text-white/90 max-w-4xl">
+                      Хотя я не практикую право с США, по опыту работы в России
+                      и образованию я юрист, в том числе, со степенью магистра
+                      права от одного из ведущих американских частных ВУЗов:
+                      Университета Джорджа Вашингтона.
+                    </p>
+                    <p className="mt-8 text-base/6 lg:text-justify font-thin text-white/80 max-w-4xl">
+                      Я написал большое количество научных и общеполитических
+                      статей на русском и английском языках, которые
+                      опубликованы в США и в России.
+                    </p>
+                  </div>
+                  <div>
+                    <div className="overflow-hidden rounded-lg bg-[#020508] ring-1 ring-[#2064bc]/20 w-fit lg:w-90">
+                      <Image
+                        alt=""
+                        src="/img/0512.jpeg"
+                        className="object-cover w-full h-full"
+                        width={1536}
+                        height={1024}
+                      />
+                    </div>
+                  </div>
+                </div>
 
                 <p className="mt-8 text-base/6 lg:text-justify font-thin text-white/80 max-w-4xl">
                   Являюсь одним из ведущих русскоязычных экспертов по правовой и
@@ -97,27 +112,10 @@ export default function Bento() {
             </div>
           </div>
 
-          {/* 2 (Large Screens) */}
-          {/*     <div className=" overflow-hidden lg:col-span-2 h-full lg:flex   p-10">
-             <p className="lg:mt-24  text-white ">
-              Вместе с коллегами веду программу{" "}
-              <a
-                href="https://www.youtube.com/watch?v=-Qyx5ugwp7o"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group relative inline-flex items-center font-semibold hover:text-[#aa0f24] transition-colors"
-              >
-                «Трифекты»
-              </a>
-              , которая с конца 2023 года каждую неделю рассказывает про новости
-              США на канале «Живой Гвоздь».
-            </p>
-          </div>*/}
-
           {/* 3 Large Screens*/}
           <div className="lg:flex p-px lg:col-span-2 h-full ">
             <div className="flex flex-col  gap-4">
-              <div className="overflow-hidden rounded-lg bg-[#020508] ring-1 ring-[#2064bc]/20 h-3/4">
+              {/* <div className="overflow-hidden rounded-lg bg-[#020508] ring-1 ring-[#2064bc]/20 h-3/4">
                 <Image
                   alt=""
                   src="/img/0512.jpeg"
@@ -125,11 +123,11 @@ export default function Bento() {
                   width={1536}
                   height={1024}
                 />
-              </div>
+              </div> */}
               <div className="overflow-hidden rounded-lg bg-[#0a1727]  ring-1 ring-[#2064bc]/20 h-full">
                 <p
                   id="services-title"
-                  className=" text-xl/8 text-pretty font-semibold text-white/90 p-10 "
+                  className=" text-xl/8 text-pretty font-semibold text-white/90 p-10 lg:mt-20"
                 >
                   Так же я представляю интересы клиентов по разным вопросам в
                   США и консультирую по ведению бизнеса в стране.

@@ -27,7 +27,7 @@ export default function Hero() {
         backgroundImage: "url('/4.png')",
         backgroundSize: "contain",
         backgroundRepeat: "no-repeat",
-        // backgroundPosition: "left",
+        backgroundPosition: "right",
       }}
     >
       <div className="pt-20 lg:pt-7 mx-auto max-w-7xl px-6 lg:px-8 flex flex-col  justify-start sm:justify-between sm:gap-20">
